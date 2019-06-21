@@ -78,9 +78,6 @@ class CityController extends Controller
     {
         $city = city::find($id);
         // Redirect to city list if updating city wasn't existed
-        if ($city == null || count($city) == 0) {
-            return redirect()->intended('/system-management/city');
-        }
 
         return view('system-mgmt/city/edit', ['city' => $city]);
     }

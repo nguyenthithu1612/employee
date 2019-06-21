@@ -93,15 +93,13 @@ class EmployeeManagementController extends Controller
      */
     public function edit($id)
     {
-        $employee = Employee::find($id);
 
-        if ($employee == null || count($employee) == 0) {
-            return redirect()->intended('/employee-management');
-        }
+        $employee = Employee::find($id);
+       
         $cities = City::all();
         $departments = Department::all();
         $divisions = Division::all();
-        
+         
         return view('employees-mgmt/edit', ['employee' => $employee, 'cities' => $cities,
         'departments' => $departments, 'divisions' => $divisions]);
     }

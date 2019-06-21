@@ -40,7 +40,7 @@
     Apply one or more of the following classes to get the
     desired effect
     |---------------------------------------------------------|
-    | SKINS         | skin-blue                               |
+    | SKINS         | skin-blueetwtw                               |
     |               | skin-black                              |
     |               | skin-purple                             |
     |               | skin-yellow                             |
