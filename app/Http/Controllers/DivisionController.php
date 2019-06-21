@@ -77,9 +77,7 @@ class DivisionController extends Controller
     {
         $division = Division::find($id);
         // Redirect to division list if updating division wasn't existed
-        if ($division == null || count($division) == 0) {
-            return redirect()->intended('/system-management/division');
-        }
+        
 
         return view('system-mgmt/division/edit', ['division' => $division]);
     }
